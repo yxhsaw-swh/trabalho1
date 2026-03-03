@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #fff8f5, #fceeea);
+    color: #5a3e36;
+}
+
+header {
+    background-color: #d8a7b1;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.logo-img {
+    width: 110px;
+    height: auto;
+    float: right; 
+}
+
+.logo-titulo {
+    font-family: 'Georgia', serif;
+    color: #4b2e1e;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #4b2e1e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #714f15;
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+
+    display: flex;              
+    gap: 30px;                  
+    justify-content: center;
+    flex-wrap: wrap;           
+}
+
+article {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;  
+    flex: 1;                   
+    min-width: 280px;          
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+article img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: #d8a7b1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards;
+}
+
+.fade-in:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.fade-in:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    .menu-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.menu-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1d4db;
+}
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1d4db;
+}
+
+.menu-list img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.item-nome {
+    flex: 1;
+}
+
+.item-preco {
+    font-weight: bold;
+    color: #c06c84;
+}
