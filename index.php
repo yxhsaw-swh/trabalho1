@@ -17,7 +17,7 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
 </header>
@@ -45,7 +45,8 @@
 </main>
 
 <footer>
-    <p>© 2026 Entre Páginas & Café | Feito com amor ☕🌷</p>
+    <p>©  <?php echo date('Y'); ?>
+ Entre Páginas & Café | Feito com amor ☕🌷</p>
 </footer>
 
 </body>
